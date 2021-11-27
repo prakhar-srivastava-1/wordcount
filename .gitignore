@@ -4,3 +4,5 @@ wordcount-project/wordcount/settings.py
 wordcount-project/wordcount/__pycache__/
 wordcount-project/wordcount/__pycache__/*.pyc
 wordcount-project/wordcount/__init__.py
+wordcount-project/static/
+wordcount-project/wordcount/static/

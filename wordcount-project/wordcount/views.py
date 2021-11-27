@@ -8,6 +8,10 @@ def home(request):
     return render(request, "home.html", {"title": "Home"})
 
 
+def about(request):
+    return render(request, 'about.html', {"title": "About"})
+
+
 def count(request):
     paragraph = request.GET["paragraph"]
     words = paragraph.split()

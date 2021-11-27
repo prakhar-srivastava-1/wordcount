@@ -1,16 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-    <p>
-        Word Count is a website that enables you to count the number of
-        words in a paragraph along with the frequency of occurence of each
-        word. It is a free and distributable piece of software.
-    </p>
     <h3>How to Use?</h3>
     <p>
         Copy and paste the text in the give text area and click the &quotCount&quot button
     </p>
     <form action="{% url 'count' %}" >
-        <textarea name="paragraph" cols="40" rows="10"></textarea>
+        <textarea name="paragraph" cols="70" rows="10"></textarea>
         <br>
         <input type="submit" value="Count">
     </form>
