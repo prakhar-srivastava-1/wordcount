@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p>
+        Number of words in your paragraph are,
+    </p>
+    <h2>{{ wordcount }}</h2>
+
+    <table border="1" cellpadding="5" cellspacing="2">
+        <caption>
+            <b>Frequency of Words</b>
+        </caption>
+
+        <tr>
+            <th>Word</th>
+            <th>Frequency</th>
+        </tr>
+
+        {% for key,value in word_freq %}
+        <tr>
+            <td>
+               {{ key }}
+            </td>
+            <td>
+               {{ value }}
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+{% endblock %}
