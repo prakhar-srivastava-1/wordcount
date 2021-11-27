@@ -1,19 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
+    <h3>Pragraph entered</h3>
+    <p class="border border-success border-width-2 p-3">
+        {{ paragraph }}
+    </p>
+
     <p>
         Number of words in your paragraph are,
     </p>
     <h2>{{ wordcount }}</h2>
 
-    <table border="1" cellpadding="5" cellspacing="2">
+    <table class="table">
         <caption>
             <b>Frequency of Words</b>
         </caption>
+        <thead class="thead-dark">
+            <tr>
+                <th>Word</th>
+                <th>Frequency</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <th>Word</th>
-            <th>Frequency</th>
-        </tr>
 
         {% for key,value in word_freq %}
         <tr>
@@ -27,5 +34,5 @@
         {% endfor %}
 
     </table>
-
+    <br><br><br>
 {% endblock %}

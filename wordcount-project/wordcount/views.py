@@ -19,6 +19,7 @@ def count(request):
     wordcount = len(words)
     print(word_freq)
     return render(request, "count.html", {"title": "Count",
+                                          "paragraph": paragraph,
                                           "wordcount": wordcount,
                                           "word_freq": word_freq})
 
